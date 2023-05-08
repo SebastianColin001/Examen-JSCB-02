@@ -1,0 +1,20 @@
+{
+  "name": "eje-yevm-12",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.7",
+    "hbs": "^4.2.0",
+    "promise-mysql": "^5.2.0"
+  },
+  "description": ""
+}

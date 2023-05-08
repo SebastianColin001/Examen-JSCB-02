@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<!-- database>source>html -->
+<head>
+	{{>head}}
+	<title>Productos | SiVeO</title>
+</head>
+<body class="preload-active aside-active aside-mobile-minimized aside-desktop-maximized">
+	<!-- BEGIN Preload -->
+	{{>preload}}
+	<!-- END Preload -->
+	<!-- BEGIN Page Holder -->
+	<div class="holder">
+		<!-- BEGIN Aside ñññ --> 
+		{{>aside}}
+		<!-- END Aside -->
+		<!-- BEGIN Page Wrapper -->
+		<div class="wrapper ">
+			<!-- BEGIN Header -->
+			{{>header}}
+			<!-- BEGIN Page Content -->
+			<div class="content">
+				<div class="container-fluid g-5">
+					<div class="row">
+						<div class="col-12">
+							<!-- BEGIN Portlet -->
+							<div class="portlet">
+								<div class="portlet-header portlet-header-bordered">
+									<h3 class="portlet-title">Datatable HTML source</h3>
+									<button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal6">Nuevo</button>
+									<style type="text/css" media="screen">
+										.formulario1{
+											margin-left: 8%;
+										}
+										.formulario2{
+											margin-left: 12%;
+										}
+										.formulario3{
+											margin-left: 12%;
+										}
+									</style>
+									<div class="modal fade" id="modal6">
+										<div class="modal-dialog modal-dialog-centered">
+											<div class="modal-content">
+												<div class="text-white modal-header bg-success text-white">
+													<h5 class="modal-title text-white">Nuevo Producto</h5>
+													<button type="button" class="btn btn-label-danger btn-icon" data-bs-dismiss="modal">
+														<i class="fa fa-times"></i>
+													</button>
+												</div>
+												<div class="modal-body">
+													<div class="row">
+														<label class="col-sm-4 col-lg-3 col-form-label text-sm-end">Descripción: </label>
+													</div>
+													<div class="row">
+														<div class="col-sm-4 col-lg-10">
+															<input type="text" class="form-control typeahead formulario1" id="typeahead-1" placeholder="Digite una descripción">
+														</div>
+													</div>
+													<div class="">
+														<label class="col-sm-5 col-lg-4 col-form-label text-sm-end ">Categoria: </label>
+														<label class="col-sm-5 col-lg-5 col-form-label text-sm-end ">Proveedor: </label>
+														
+													</div>
+													<div class="row formulario2">
+														<div class="col-sm-4 col-lg-6">
+															<!-- BEGIN Select -->
+															<select id="select2-1">
+																<option value="" selected disabled hidden>Seleccione</option>
+																<option value="HI" selected>Alimentos y bebidas</option>
+																<option value="EL">Electronica</option>
+																<option value="CA">Productos de origen animal</option>
+																<option value="CA">Enlatados</option>
+															</select>
+															<!-- END Select -->
+														</div>
+														<div class="col-sm-5 col-lg-5">
+															<!-- BEGIN Select -->
+															<select id="select2-1">
+																<option value="" selected disabled hidden>Seleccione</option>
+																<option value="AK">La Vaquita</option>
+																<option value="HI">Gamesa</option>
+																<option value="CA">Hersheys</option>
+															</select>
+															<!-- END Select -->
+														</div>
+													</div>
+													<br>
+													<div class="row formulario3">
+														<label class="col-sm-4 col-lg-3 col-form-label text-sm-end">Precio:</label>
+														<div class="col-sm-1 col-lg-5 ">
+															<input type="text" class="form-control" id="inputmask-5" placeholder="$0.00">
+														</div>
+													</div>
+												</div>
+												<div class="modal-footer">
+													<button data-bs-dismiss="modal" class="btn btn-success" >Guardar</button>
+													<button data-bs-dismiss="modal" class="btn btn-outline-danger ">Cancelar</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="modal fade" id="modal6-1">
+										<div class="modal-dialog modal-dialog-centered">
+											<div class="modal-content">
+												<div class="text-white modal-header bg-primary text-white">
+													<h5 class="modal-title text-white">Actualizar un Producto</h5>
+													<button type="button" class="btn btn-label-danger btn-icon" data-bs-dismiss="modal">
+														<i class="fa fa-times"></i>
+													</button>
+												</div>
+												<div class="modal-body">
+													<div class="row">
+														<label class="col-sm-4 col-lg-3 col-form-label text-sm-end">Descripción: </label>
+													</div>
+													<div class="row">
+														<div class="col-sm-4 col-lg-10">
+															<input type="text" class="form-control typeahead formulario1" id="typeahead-1" placeholder="Digite una descripción" value="Queso">
+														</div>
+													</div>
+													<div class="">
+														<label class="col-sm-5 col-lg-4 col-form-label text-sm-end ">Categoria: </label>
+														<label class="col-sm-5 col-lg-5 col-form-label text-sm-end ">Proveedor: </label>
+														
+													</div>
+													<div class="row formulario2">
+														<div class="col-sm-4 col-lg-6">
+															<!-- BEGIN Select -->
+															<select id="select2-1">
+																<option value="" selected disabled hidden>Seleccione</option>
+																<option value="HI" selected>Alimentos y bebidas</option>
+																<option value="EL">Electronica</option>
+																<option value="CA">Productos de origen animal</option>
+																<option value="CA">Enlatados</option>
+															</select>
+															<!-- END Select -->
+														</div>
+														<div class="col-sm-5 col-lg-5">
+															<!-- BEGIN Select -->
+															<select id="select2-1">
+																<option value="" selected disabled hidden>Seleccione</option>
+																<option value="AK">La Vaquita</option>
+																<option value="HI">Gamesa</option>
+																<option value="CA">Hersheys</option>
+															</select>
+															<!-- END Select -->
+														</div>
+													</div>
+													<br>
+													<div class="row formulario3">
+														<label class="col-sm-4 col-lg-3 col-form-label text-sm-end">Precio:</label>
+														<div class="col-sm-1 col-lg-5 ">
+															<input type="text" class="form-control" id="inputmask-5" value="$60.00" placeholder="$0.00">
+														</div>
+													</div>
+												</div>
+												<div class="modal-footer">
+													<button data-bs-dismiss="modal" class="btn btn-primary" >Actualizar</button>
+													<button data-bs-dismiss="modal" class="btn btn-outline-danger ">Cancelar</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="modal fade" id="modal6-2">
+										<div class="modal-dialog modal-dialog-centered">
+											<div class="modal-content">
+												<div class="text-white modal-header bg-danger text-white">
+													<h5 class="modal-title text-white">Eliminar un Producto</h5>
+													<button type="button" class="btn btn-label-danger btn-icon" data-bs-dismiss="modal">
+														<i class="fa fa-times"></i>
+													</button>
+												</div>
+												<div class="modal-body">
+													<br>
+														<p> ¿Esta seguro que quiere eliminar el producto seleccionado? </p>
+													<br>
+												</div>
+												<div class="modal-footer">
+													<button data-bs-dismiss="modal" class="btn btn-danger" >Eliminar</button>
+													<button data-bs-dismiss="modal" class="btn btn-outline-danger ">Cancelar</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="portlet-body">
+									<p>The foundation for Datatable is progressive enhancement, so it is very adept at reading table information directly from the DOM.</p>
+									<hr>
+									<!-- BEGIN Datatable -->
+									<table id="datatable-1" class="table table-bordered table-striped table-hover">
+										<thead>
+											<tr>
+												<th>Descripción</th>
+												<th>Precio</th>
+												<th>Acciones</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Chocolate</td>
+												<td>$15.00</td>
+												<td class="text-nowrap">
+													<button class="btn btn-label-primary btn-icon mr-1" data-bs-toggle="modal" data-bs-target="#modal6-1">
+														<i class="fa fa-edit"></i>
+													</button>
+													<button class="btn btn-label-danger btn-icon mr-1" data-bs-toggle="modal" data-bs-target="#modal6-2">
+														<i class="fa fa-trash"></i>
+													</button>
+												</td>
+											</tr>
+											<tr>
+												<td>Pan</td>
+												<td>$10.00</td>
+												<td class="text-nowrap">
+													<button class="btn btn-label-primary btn-icon mr-1" data-bs-toggle="modal" data-bs-target="#modal6-1">
+														<i class="fa fa-edit"></i>
+													</button>
+													<button class="btn btn-label-danger btn-icon mr-1" data-bs-toggle="modal" data-bs-target="#modal6-2">
+														<i class="fa fa-trash"></i>
+													</button>
+												</td>
+											</tr>
+											<tr>
+												<td>Queso</td>
+												<td>$60.00</td>
+												<td class="text-nowrap">
+													<button class="btn btn-label-primary btn-icon mr-1" data-bs-toggle="modal" data-bs-target="#modal6-1">
+														<i class="fa fa-edit"></i>
+													</button>
+													<button class="btn btn-label-danger btn-icon mr-1" data-bs-toggle="modal" data-bs-target="#modal6-2">
+														<i class="fa fa-trash"></i>
+													</button>
+												</td>
+											</tr>
+											<tr>
+												<td>Queso</td>
+												<td>$60.00</td>
+												<td class="text-nowrap">
+													<button class="btn btn-label-primary btn-icon mr-1" data-bs-toggle="modal" data-bs-target="#modal6-1">
+														<i class="fa fa-edit"></i>
+													</button>
+													<button class="btn btn-label-danger btn-icon mr-1" data-bs-toggle="modal" data-bs-target="#modal6-2">
+														<i class="fa fa-trash"></i>
+													</button>
+												</td>
+											</tr>
+											<tr>
+												<td>Queso</td>
+												<td>$60.00</td>
+												<td class="text-nowrap">
+													<button class="btn btn-label-primary btn-icon mr-1" data-bs-toggle="modal" data-bs-target="#modal6-1">
+														<i class="fa fa-edit"></i>
+													</button>
+													<button class="btn btn-label-danger btn-icon mr-1" data-bs-toggle="modal" data-bs-target="#modal6-2">
+														<i class="fa fa-trash"></i>
+													</button>
+												</td>
+											</tr>
+											<tr>
+												<td>Queso</td>
+												<td>$60.00</td>
+												<td class="text-nowrap">
+													<button class="btn btn-label-primary btn-icon mr-1" data-bs-toggle="modal" data-bs-target="#modal6-1">
+														<i class="fa fa-edit"></i>
+													</button>
+													<button class="btn btn-label-danger btn-icon mr-1" data-bs-toggle="modal" data-bs-target="#modal6-2">
+														<i class="fa fa-trash"></i>
+													</button>
+												</td>
+											</tr>
+											<tr>
+												<td>Queso</td>
+												<td>$60.00</td>
+												<td class="text-nowrap">
+													<button class="btn btn-label-primary btn-icon mr-1" data-bs-toggle="modal" data-bs-target="#modal6-1">
+														<i class="fa fa-edit"></i>
+													</button>
+													<button class="btn btn-label-danger btn-icon mr-1" data-bs-toggle="modal" data-bs-target="#modal6-2">
+														<i class="fa fa-trash"></i>
+													</button>
+												</td>
+											</tr>
+											<tr>
+												<td>Queso</td>
+												<td>$60.00</td>
+												<td class="text-nowrap">
+													<button class="btn btn-label-primary btn-icon mr-1" data-bs-toggle="modal" data-bs-target="#modal6-1">
+														<i class="fa fa-edit"></i>
+													</button>
+													<button class="btn btn-label-danger btn-icon mr-1" data-bs-toggle="modal" data-bs-target="#modal6-2">
+														<i class="fa fa-trash"></i>
+													</button>
+												</td>
+											</tr>
+											<tr>
+												<td>Queso</td>
+												<td>$60.00</td>
+												<td class="text-nowrap">
+													<button class="btn btn-label-primary btn-icon mr-1" data-bs-toggle="modal" data-bs-target="#modal6-1">
+														<i class="fa fa-edit"></i>
+													</button>
+													<button class="btn btn-label-danger btn-icon mr-1" data-bs-toggle="modal" data-bs-target="#modal6-2">
+														<i class="fa fa-trash"></i>
+													</button>
+												</td>
+											</tr>
+											<tr>
+												<td>Queso</td>
+												<td>$60.00</td>
+												<td class="text-nowrap">
+													<button class="btn btn-label-primary btn-icon mr-1" data-bs-toggle="modal" data-bs-target="#modal6-1">
+														<i class="fa fa-edit"></i>
+													</button>
+													<button class="btn btn-label-danger btn-icon mr-1" data-bs-toggle="modal" data-bs-target="#modal6-2">
+														<i class="fa fa-trash"></i>
+													</button>
+												</td>
+											</tr>
+											<tr>
+												<td>Queso</td>
+												<td>$60.00</td>
+												<td class="text-nowrap">
+													<button class="btn btn-label-primary btn-icon mr-1" data-bs-toggle="modal" data-bs-target="#modal6-1">
+														<i class="fa fa-edit"></i>
+													</button>
+													<button class="btn btn-label-danger btn-icon mr-1" data-bs-toggle="modal" data-bs-target="#modal6-2">
+														<i class="fa fa-trash"></i>
+													</button>
+												</td>
+											</tr>
+											<tr>
+												<td>Queso</td>
+												<td>$60.00</td>
+												<td class="text-nowrap">
+													<button class="btn btn-label-primary btn-icon mr-1" data-bs-toggle="modal" data-bs-target="#modal6-1">
+														<i class="fa fa-edit"></i>
+													</button>
+													<button class="btn btn-label-danger btn-icon mr-1" data-bs-toggle="modal" data-bs-target="#modal6-2">
+														<i class="fa fa-trash"></i>
+													</button>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<!-- END Datatable -->
+								</div>
+							</div>
+							<!-- END Portlet -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- END Page Content -->
+			<!-- BEGIN Footer -->
+			{{>footer}}
+			<!-- END Footer -->
+		</div>
+		<!-- END Page Wrapper -->
+	</div>
+	<!-- END Page Holder -->
+	{{>floatButton}}
+	{{>offCanvas}}
+	{{>scripts}}
+	<script type="text/javascript" src="..\../assets/app/pages/datatable/basic/base.js"></script>
+	<script type="text/javascript" src="..\../assets/app/pages/form/inputmask.js"></script>
+</body>
+
+</html>
